@@ -98,10 +98,8 @@ fun DriversScreen(navController: NavController) {
 
             Button(
                 onClick = {
-                    if (driverString.isNotBlank()) {
-                        drivers.clear()
-                        driverString = ""
-                    }
+                    drivers.clear()
+                    driverString = ""
                 },
                 modifier = Modifier.testTag("clearDriverButton") // for testing
             ) {
